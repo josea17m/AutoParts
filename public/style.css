@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+
+/* COLORS */
+
+:root{
+    --main-color: red;
+    --second-color: white;
+    --other-color: orange;
+}
+
+/* HEADER */
+
+.container-title{
+    font-size: 1rem;
+}
+
+.container-title a h1{
+    color: var(--second-color);
+    text-align: center;
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 1%;
+    background-color:var(--main-color);
+}
+
+ /*HEADER ITEMS*/
+.item-logo-top{
+    padding: 1%;
+    border: 2px solid var(--second-color);
+    border-radius: 10px;
+    background-color: var(--second-color);
+}
+
+.item-logo-top img{
+    width: 100%;
+    height: 100%;
+}
+
+.item-top img{
+    width: 100%;
+    height: 60%;
+    
+}
+
+.item-top{
+    margin: 10% 5% 0% 5%;
+    transition: scale, 250ms;
+}
+
+.item-top:hover{
+    transform: scale(1.1);
+}
+
+.container-items-header{
+    display: flex;
+}
+
+
+/* NAVBAR */
+.container-navbar{
+    display: flex;
+    width: 100%;
+    padding: 20%;
+    height: 10px;  
+    background-color: var(--second-color);
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+    background-color: var(--other-color);  
+}
+
+.navbar li{
+    display: table;
+    margin: 1%;
+    color: var(--second-color);
+    font-size: 1.3rem;
+}
+
+.navbar li::after{
+    content: "";
+    display: block;
+    height: 1.5px;
+    background-color: var(--second-color);
+    transform: scale(0,1);
+    transform-origin: center;
+    transition: transform .25s;
+}
+
+.navbar li:hover::after{
+    transform: scale(1,1);
+}
+
+/* SEARCH INPUT */
+.container-search{
+    padding: 1%;
+    width: 40%;
+    border-radius: 8px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.display-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-search label input{
+    border: none;
+}
+
+.container-search label input:focus{
+    outline: none;
+}
+
+/* MAIN */
+
+.main-container{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-items: center;
+    margin: 3% 0%;
+}
+
+.grid-box {
+    width: 20rem;
+    height: 20rem;
+    margin: 1%;
+    transition: transform, 500ms;
+}
+
+.grid-box img{
+    width: 95%;
+    height: 95%;
+}
+
+.grid-box:hover{
+    transform: scale(1.1);
+}
