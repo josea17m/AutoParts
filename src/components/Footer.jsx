@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer>
+    <footer className="footer-container">
       <p>
         By <i>josea17m</i>
       </p>

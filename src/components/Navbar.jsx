@@ -2,8 +2,9 @@ function Navbar() {
   return (
     <div>
       <ul className="navbar">
-        <li>Productos</li>
-        <li>Contáctanos</li>
+        <li className="navbar-item">Productos</li>
+        <li>|</li>
+        <li className="navbar-item">Contáctanos</li>
       </ul>
     </div>
   );

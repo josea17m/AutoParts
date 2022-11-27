@@ -5,14 +5,23 @@
     text-decoration: none;
     color: black;
     list-style: none;
+    font-family: Roboto, serif;
 }
 
 /* COLORS */
 
 :root{
-    --main-color: red;
-    --second-color: white;
-    --other-color: orange;
+    --main-color: #bc080e;
+    --second-color: #a7fff7;
+    --other-color: #670919;
+    --text-color: white;
+    --alo--: #F9991E;
+
+/* .color1 {color: #670919;}
+.color2 {color: #bc080e;}
+.color3 {color: #08cfff;}
+.color4 {color: #0ffff8;}
+.color5 {color: #a7fff7;} */
 }
 
 /* HEADER */
@@ -21,29 +30,32 @@
     font-size: 1rem;
 }
 
-.container-title a h1{
+.title{
     color: var(--second-color);
     text-align: center;
+    justify-content: center;
 }
 
 .container-header{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 80px;
+    height: 100px;
     padding: 1%;
     background-color:var(--main-color);
 }
 
  /*HEADER ITEMS*/
-.item-logo-top{
+.container-logo-top{
+    width: 10%;
+    height: 100%;
     padding: 1%;
-    border: 2px solid var(--second-color);
+    border: 2px solid var(--alo--);
     border-radius: 10px;
-    background-color: var(--second-color);
+    background-color: var(--alo--);
 }
 
-.item-logo-top img{
+.container-logo-top img{
     width: 100%;
     height: 100%;
 }
@@ -84,18 +96,23 @@
     background-color: var(--other-color);  
 }
 
+
 .navbar li{
+    margin: 1%;
+    color: var(--text-color); 
+}
+.navbar-item{
     display: table;
     margin: 1%;
     color: var(--second-color);
     font-size: 1.3rem;
 }
 
-.navbar li::after{
+.navbar-item::after{
     content: "";
     display: block;
     height: 1.5px;
-    background-color: var(--second-color);
+    background-color: var(--text-color);
     transform: scale(0,1);
     transform-origin: center;
     transition: transform .25s;
@@ -150,4 +167,19 @@
 
 .grid-box:hover{
     transform: scale(1.1);
+}
+
+.grid-box-test{
+    border: 1px solid black;
+    width: 20rem;
+    height: 20rem;
+    margin: 1%;
+}
+
+/* FOOTER */
+
+.footer-container{
+    width: 100%;
+    height: 120px;
+    background-color: var(--other-color);
 }
