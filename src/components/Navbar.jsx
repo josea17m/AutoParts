@@ -1,10 +1,16 @@
 function Navbar() {
   return (
-    <div>
+    <div className="container-navbar">
       <ul className="navbar">
-        <li className="navbar-item">Productos</li>
-        <li>|</li>
-        <li className="navbar-item">Contáctanos</li>
+        <a href="/productos" className="navbar-item">
+          Productos
+        </a>
+        <a href="donde-estamos" className="navbar-item">
+          Donde estamos
+        </a>
+        <a href="/contactanos" className="navbar-item">
+          Contáctanos
+        </a>
       </ul>
     </div>
   );
