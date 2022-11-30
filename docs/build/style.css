@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  font-family: Roboto, serif;
+}
+
+/* COLORS */
+
+:root {
+  --header-color: #ffff;
+  --navbar-color: #fcb404;
+  --text-color: #363c44;
+  --footer-color: #bcbcbc;
+}
+
+/* HEADER */
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  padding: 1%;
+  background-color: var(--header-color);
+}
+
+/*HEADER ITEMS*/
+.container-logo {
+  margin-left: 2%;
+  width: auto;
+  height: auto;
+}
+
+.container-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.item-top img {
+  width: 100%;
+  height: 100%;
+}
+
+.item-top {
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 3rem;
+  height: 3rem;
+  transition: scale, 250ms;
+}
+
+.item-top:hover {
+  transform: scale(1.1);
+}
+
+.container-items-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5%;
+  width: 30%;
+}
+
+/* NAVBAR */
+.container-navbar {
+  width: 100%;
+  height: 55px;
+  background-color: var(--navbar-color);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-item {
+  display: table;
+  padding: 1%;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  transition: transform, 500ms;
+}
+.navbar-item::after {
+  content: "";
+  display: block;
+  height: 2.5px;
+  background-color: var(--text-color);
+  transform: scale(0, 1);
+  transform-origin: center;
+  transition: transform 0.25s;
+}
+
+.navbar-item:hover::after {
+  transform: scale(1, 1);
+}
+
+/* SEARCH INPUT */
+
+.container-search {
+  padding: 1%;
+  width: 40%;
+  border-radius: 8px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.display-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-search label input {
+  border: none;
+}
+
+.container-search label input:focus {
+  outline: none;
+}
+
+/* MAIN */
+
+.container-main {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-items: center;
+  padding: 1% 0%;
+  width: 95%;
+  margin: 0 auto;
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+.grid-box {
+  width: 20rem;
+  height: 20rem;
+  margin: 1%;
+  transition: transform, 500ms;
+}
+
+.grid-box:hover {
+  transform: scale(1.01);
+}
+
+.grid-box img {
+  width: 95%;
+  height: 95%;
+}
+
+.grid-box-test {
+  border: 1px solid black;
+  width: 20rem;
+  height: 20rem;
+  margin: 1%;
+}
+
+/* FOOTER */
+
+.footer-container {
+  height: 190px;
+  background-color: var(--footer-color);
+}
+
+.footer {
+  padding: 1%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: auto auto auto;
+
+  justify-content: space-between;
+}
+
+.footer-item {
+  padding-bottom: 10px;
+  text-align: left;
+  border-bottom: 1px solid #363c44;
+  font-size: 1.2rem;
+}
+
+.footer-item-inferior {
+  height: auto;
+  margin-top: 5%;
+  font-size: 0.8rem;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.footer-social a {
+  font-size: 1rem;
+  margin: 6% 0%;
+}
+
+.pay-methods {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.pay-method-item {
+  margin: 0 3%;
+  width: 2rem;
+}
+
+.visa {
+  height: 2rem;
+  background: url("visa 32px.png") no-repeat;
+}
+
+.visa:hover {
+  background: url("visa 32px.png") no-repeat;
+}
+
+.american-express {
+  height: 2.5rem;
+  background: url("american-express 32px.png") no-repeat;
+}
+
+.american-express:hover {
+  background: url("american-express 32px.png") no-repeat;
+}
+
+.master-card {
+  height: 1.5rem;
+  position: relative;
+  top: 10px;
+  background: url("mastercard 32px.png") no-repeat;
+}
+
+.master-card:hover {
+  background: url("mastercard 32px.png") no-repeat;
+}
+
+.paypal {
+  height: 2rem;
+  background: url("paypal 32px.png") no-repeat;
+}
+
+.paypal:hover {
+  background: url("paypal 32px.png") no-repeat;
+}
+
+.map-item {
+  margin-right: 4%;
+  margin-bottom: 4%;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url("map 24px.png") no-repeat;
+}
+
+.map-link {
+  margin-top: 1%;
+  font-size: 1rem;
+}
+
+.map-item:hover {
+  background: url("map 24px.png") no-repeat;
+}
+
+.container-map {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  width: 100%;
+}
+
+.container-map-item {
+  display: flex;
+}
