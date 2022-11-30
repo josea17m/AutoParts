@@ -1,6 +1,6 @@
 function MainContent(props) {
   return (
-    <main className="main-container">
+    <main className="container-main">
       {props.productos.map((productos) => (
         <div className="grid-box">
           <a href={productos.url}>

@@ -1,0 +1,7 @@
+[
+  { "name": "camion", "price": "2000", "img":"/public/amortiguadores.jpg", "alt": "amort" },
+  { "name": "carro", "price": "1000", "img":"/public/amortiguadores.jpg", "alt": "amort" },
+  { "name": "moto", "price": "800", "img":"/public/amortiguadores.jpg", "alt": "amort" },
+  { "name": "avion", "price": "5000", "img":"/public/amortiguadores.jpg", "alt": "amort" },
+  { "name": "bicicleta", "price": "200", "img":"/public/amortiguadores.jpg", "alt": "amort"}
+]

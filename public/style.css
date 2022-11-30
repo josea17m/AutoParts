@@ -68,7 +68,7 @@
 /* NAVBAR */
 .container-navbar {
   width: 100%;
-  height: 60px;
+  height: 55px;
   background-color: var(--navbar-color);
 }
 
@@ -90,17 +90,17 @@
   display: block;
   height: 2.5px;
   background-color: var(--text-color);
-  transform: scale(0,1);
+  transform: scale(0, 1);
   transform-origin: center;
-  transition: transform .25s;
-  
+  transition: transform 0.25s;
 }
 
 .navbar-item:hover::after {
-  transform: scale(1,1);
+  transform: scale(1, 1);
 }
 
 /* SEARCH INPUT */
+
 .container-search {
   padding: 1%;
   width: 40%;
@@ -124,11 +124,14 @@
 
 /* MAIN */
 
-.main-container {
+.container-main {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   justify-items: center;
-  margin: 3% 0%;
+  padding: 1% 0%;
+  width: 95%;
+  margin: 0 auto;
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.75);
 }
 
 .grid-box {
@@ -138,13 +141,13 @@
   transition: transform, 500ms;
 }
 
+.grid-box:hover {
+  transform: scale(1.01);
+}
+
 .grid-box img {
   width: 95%;
   height: 95%;
-}
-
-.grid-box:hover {
-  transform: scale(1.1);
 }
 
 .grid-box-test {
@@ -201,45 +204,45 @@
 
 .pay-method-item {
   margin: 0 3%;
-  width: 4rem;
+  width: 2rem;
 }
 
 .visa {
-  height: 3rem;
-  background: url("visa 64px.png") no-repeat;
+  height: 2rem;
+  background: url("visa 32px.png") no-repeat;
 }
 
 .visa:hover {
-  background: url("visa 64px.png") no-repeat;
+  background: url("visa 32px.png") no-repeat;
 }
 
 .american-express {
-  height: 3.5rem;
-  background: url("american-express 64px.png") no-repeat;
+  height: 2.5rem;
+  background: url("american-express 32px.png") no-repeat;
 }
 
 .american-express:hover {
-  background: url("american-express 64px.png") no-repeat;
+  background: url("american-express 32px.png") no-repeat;
 }
 
 .master-card {
-  height: 2.5rem;
+  height: 1.5rem;
   position: relative;
   top: 10px;
-  background: url("master-card 64px.png") no-repeat;
+  background: url("mastercard 32px.png") no-repeat;
 }
 
 .master-card:hover {
-  background: url("master-card 64px.png") no-repeat;
+  background: url("mastercard 32px.png") no-repeat;
 }
 
 .paypal {
-  height: 4rem;
-  background: url("paypal 64px.png") no-repeat;
+  height: 2rem;
+  background: url("paypal 32px.png") no-repeat;
 }
 
 .paypal:hover {
-  background: url("paypal 64px.png") no-repeat;
+  background: url("paypal 32px.png") no-repeat;
 }
 
 .map-item {
@@ -250,7 +253,7 @@
   background: url("map 24px.png") no-repeat;
 }
 
-.map-link{
+.map-link {
   margin-top: 1%;
   font-size: 1rem;
 }
@@ -259,7 +262,7 @@
   background: url("map 24px.png") no-repeat;
 }
 
-.container-map{
+.container-map {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -267,7 +270,6 @@
   width: 100%;
 }
 
-.container-map-item{
+.container-map-item {
   display: flex;
-
 }
